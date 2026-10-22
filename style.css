@@ -47,3 +47,25 @@ footer{border-top:1px solid rgba(255,255,255,.07);min-height:78px;max-width:1180
 footer>a:last-child:hover{color:var(--red)}
 @media(max-width:700px){.topbar{height:64px;padding:0 20px}.hero{min-height:auto;padding:48px 18px 65px}.portrait-wrap{width:min(66vw,260px);margin-bottom:32px}.hero h1{font-size:clamp(43px,12vw,74px);letter-spacing:-.5px}.hero-line{font-size:10px;letter-spacing:4px;margin:20px 0 25px}.work-section,.contact-section{padding:52px 18px 60px}.section-heading h2{font-size:49px}.video-grid{grid-template-columns:1fr;gap:21px}.contact-section{grid-template-columns:1fr;gap:30px;padding-top:55px}.contact-heading h2{font-size:54px}.social-card{min-height:80px;padding:14px}.social-icon{width:42px;height:42px;flex-basis:42px}footer{padding:18px 20px;gap:10px;flex-wrap:wrap}footer span{font-size:8px;letter-spacing:1px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Arabic copy and a cleaner click-to-play video preview */
+body{font-family:"Cairo","DM Sans",sans-serif}
+.topbar,.section-heading,.video-caption,footer{direction:rtl}
+.eyebrow{letter-spacing:1px}
+.top-contact{letter-spacing:0;font-size:12px}
+.work-link{letter-spacing:0;font-size:12px}
+.project-count span{letter-spacing:1px;margin-right:5px;margin-left:0}
+.video-frame{cursor:pointer;isolation:isolate}
+.video-poster{display:block;width:100%;height:100%;object-fit:cover;background:#141414}
+.play-video{position:absolute;inset:0;width:100%;height:100%;border:0;background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.3));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;cursor:pointer;z-index:2;font-family:inherit}
+.play-video span{display:grid;place-items:center;width:72px;height:72px;border-radius:50%;background:var(--red);font-size:25px;padding-right:3px;box-shadow:0 8px 28px rgba(0,0,0,.35);transition:transform .2s}
+.play-video small{font-size:12px;font-weight:700;background:rgba(8,8,8,.7);padding:7px 12px;border-radius:20px}
+.play-video:hover span{transform:scale(1.08)}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;z-index:3;border:0}
+.video-frame.is-playing{cursor:default}
+.video-frame.is-playing:after{z-index:4;pointer-events:none}
+.video-caption{letter-spacing:0;font-size:11px}
+.social-label small{font-family:inherit}
+.contact-heading h2{line-height:1.08}
+footer{letter-spacing:0}
+@media(max-width:700px){.section-heading h2{font-size:49px}.project-count{font-size:21px}.project-count span{font-size:10px}.play-video span{width:64px;height:64px}}
