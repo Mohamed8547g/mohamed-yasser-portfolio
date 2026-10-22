@@ -1,80 +1,125 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0a0a0c">
-  <meta name="description" content="محمد ياسر — فيديو إيديتور وجرافيك ديزاينر وصانع محتوى. شاهد نماذج من أعمالي وتواصل معي.">
-  <title>Mohamed Yasser | Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Mohamed Yasser — Video Editor. Selected video work and contact links.">
+  <title>Mohamed Yasser | Video Editor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="ambient ambient-one"></div>
   <header class="topbar">
-    <a class="brand" href="#home" aria-label="Mohamed Yasser home"><span class="brand-mark">MY</span><span>MOHAMED <b>YASSER</b></span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
-    <nav id="navLinks">
-      <a href="#about">عني</a><a href="#services">خدماتي</a><a href="#work">أعمالي</a><a href="#contact" class="nav-cta">تواصل معايا ↗</a>
-    </nav>
+    <a class="wordmark" href="#home" aria-label="Mohamed Yasser home">MY<span>.</span></a>
+    <a class="top-contact" href="#contact">LET'S CONNECT <span>↗</span></a>
   </header>
 
-  <main>
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="live-dot"></span> PORTFOLIO / 2026</div>
-        <p class="intro">أحوّل الأفكار إلى <span>مشاهد تتحكي.</span></p>
-        <h1>MOHAMED<br><span>YASSER</span></h1>
-        <p class="hero-description">فيديو إيديتور وجرافيك ديزاينر وصانع محتوى. بشتغل على إن كل تفصيلة في الفيديو تخدم الفكرة وتشد انتباه الجمهور.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#work">شوف شغلي <span>↙</span></a><a class="button button-ghost" href="#contact">خلينا نتكلم</a></div>
-        <div class="hero-stats"><div><strong>VIDEO</strong><small>EDITING</small></div><i></i><div><strong>VISUAL</strong><small>DESIGN</small></div><i></i><div><strong>CREATIVE</strong><small>CONTENT</small></div></div>
+  <main id="home">
+    <section class="hero">
+      <div class="portrait-wrap">
+        <div class="portrait-ring">
+          <img class="portrait" src="profile.jpg" alt="Mohamed Yasser">
+        </div>
+        <span class="ring-dot"></span>
       </div>
-      <div class="hero-art">
-        <div class="portrait-frame"><div class="portrait-inner"><div class="portrait-placeholder"><span class="portrait-initials">MY</span><span class="portrait-label">YOUR PHOTO GOES HERE</span></div><div class="portrait-overlay"></div><div class="portrait-caption"><span>CREATIVE MINDSET</span><b>EDITOR • DESIGNER</b></div></div></div>
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="floating-tag tag-top">CUT. COLOR. STORY.</div><div class="floating-tag tag-bottom"><span class="red-dot"></span> AVAILABLE FOR PROJECTS</div>
-      </div>
-      <div class="scroll-note"><span></span> SCROLL TO EXPLORE</div>
+
+      <p class="eyebrow"><span></span> VIDEO EDITOR</p>
+      <h1>MOHAMED <span>YASSER</span><i>.</i></h1>
+      <p class="hero-line">VIDEO EDITOR</p>
+      <a class="work-link" href="#work">EXPLORE MY WORK <span>↓</span></a>
     </section>
 
-    <section class="section-wrap about-section" id="about">
-      <div class="section-heading"><p class="section-kicker">01 / ABOUT ME</p><h2>مش مجرد مونتاج،<br><span>دي حكاية بتتحكي.</span></h2></div>
-      <div class="about-copy"><p>أنا محمد ياسر، مهتم بالمونتاج وصناعة المحتوى والتصميم البصري. هدفي أقدّم شغل شكله قوي، إيقاعه مظبوط، ويوصل الرسالة من غير زحمة.</p><p class="muted">المكان ده معمول عشان يعرض أفضل شغلي — ضيف مشاريعك الحقيقية وروابطك قبل ما تشاركه مع العملاء.</p></div>
-    </section>
+    <section class="work-section" id="work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> SELECTED PROJECTS</p>
+          <h2>MY WORK<span>.</span></h2>
+        </div>
+        <p class="project-count">07 <span>VIDEOS</span></p>
+      </div>
 
-    <section class="section-wrap services-section" id="services">
-      <div class="section-heading compact"><p class="section-kicker">02 / WHAT I DO</p><h2>خدماتي <span>×</span></h2></div>
-      <div class="service-grid">
-        <article class="service-card"><div class="service-icon">▣</div><p class="service-number">01</p><h3>فيديو إيديتور</h3><p>مونتاج ريلز وفيديوهات، إيقاع بصري، مؤثرات صوتية، وتصحيح ألوان.</p><span class="service-en">VIDEO EDITOR</span></article>
-        <article class="service-card"><div class="service-icon">✳</div><p class="service-number">02</p><h3>جرافيك ديزاينر</h3><p>تصميمات بصرية وهوية متناسقة تخلي المحتوى واضح ومميز.</p><span class="service-en">GRAPHIC DESIGNER</span></article>
-        <article class="service-card"><div class="service-icon">◉</div><p class="service-number">03</p><h3>صانع محتوى</h3><p>أفكار وتقديم بصري يساعدوا المحتوى يوصل للجمهور المناسب.</p><span class="service-en">CONTENT CREATOR</span></article>
+      <div class="video-grid">
+        <article class="video-card">
+          <a class="video-frame" href="https://drive.google.com/file/d/1VV-OU5vOTE0FIZDHKe6wJU9umAp03nzh/view" target="_blank" rel="noopener" aria-label="Open video project 01">
+            <iframe src="https://drive.google.com/file/d/1VV-OU5vOTE0FIZDHKe6wJU9umAp03nzh/preview" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="Video project 01"></iframe>
+            <span class="project-number">01</span>
+          </a>
+          <div class="video-caption"><span>VIDEO PROJECT</span><span>↗</span></div>
+        </article>
+        <article class="video-card">
+          <a class="video-frame" href="https://drive.google.com/file/d/17kUFD_q_6pyRXi_lwsfyUpbiZGjPKWQ6/view" target="_blank" rel="noopener" aria-label="Open video project 02">
+            <iframe src="https://drive.google.com/file/d/17kUFD_q_6pyRXi_lwsfyUpbiZGjPKWQ6/preview" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="Video project 02"></iframe>
+            <span class="project-number">02</span>
+          </a>
+          <div class="video-caption"><span>VIDEO PROJECT</span><span>↗</span></div>
+        </article>
+        <article class="video-card">
+          <a class="video-frame" href="https://drive.google.com/file/d/13Ry3qdexXKRY24vYpm_lKu-Cs_gmeeWG/view" target="_blank" rel="noopener" aria-label="Open video project 03">
+            <iframe src="https://drive.google.com/file/d/13Ry3qdexXKRY24vYpm_lKu-Cs_gmeeWG/preview" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="Video project 03"></iframe>
+            <span class="project-number">03</span>
+          </a>
+          <div class="video-caption"><span>VIDEO PROJECT</span><span>↗</span></div>
+        </article>
+        <article class="video-card">
+          <a class="video-frame" href="https://drive.google.com/file/d/1rXZqH-T2AbwB8uWjo2b8ouZaqDPQ2ygN/view" target="_blank" rel="noopener" aria-label="Open video project 04">
+            <iframe src="https://drive.google.com/file/d/1rXZqH-T2AbwB8uWjo2b8ouZaqDPQ2ygN/preview" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="Video project 04"></iframe>
+            <span class="project-number">04</span>
+          </a>
+          <div class="video-caption"><span>VIDEO PROJECT</span><span>↗</span></div>
+        </article>
+        <article class="video-card">
+          <a class="video-frame" href="https://drive.google.com/file/d/1ibDYxE5qQ97I3JN0uIEtQyLaj9rbmMXN/view" target="_blank" rel="noopener" aria-label="Open video project 05">
+            <iframe src="https://drive.google.com/file/d/1ibDYxE5qQ97I3JN0uIEtQyLaj9rbmMXN/preview" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="Video project 05"></iframe>
+            <span class="project-number">05</span>
+          </a>
+          <div class="video-caption"><span>VIDEO PROJECT</span><span>↗</span></div>
+        </article>
+        <article class="video-card">
+          <a class="video-frame" href="https://drive.google.com/file/d/115EoN461NvOJs4XyBTdY9wZnmxy5sjDS/view" target="_blank" rel="noopener" aria-label="Open video project 06">
+            <iframe src="https://drive.google.com/file/d/115EoN461NvOJs4XyBTdY9wZnmxy5sjDS/preview" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="Video project 06"></iframe>
+            <span class="project-number">06</span>
+          </a>
+          <div class="video-caption"><span>VIDEO PROJECT</span><span>↗</span></div>
+        </article>
+        <article class="video-card">
+          <a class="video-frame" href="https://drive.google.com/file/d/1gBqpdmviwXFRNe38ZR7uWaYUlnS262wC/view" target="_blank" rel="noopener" aria-label="Open video project 07">
+            <iframe src="https://drive.google.com/file/d/1gBqpdmviwXFRNe38ZR7uWaYUlnS262wC/preview" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="Video project 07"></iframe>
+            <span class="project-number">07</span>
+          </a>
+          <div class="video-caption"><span>VIDEO PROJECT</span><span>↗</span></div>
+        </article>
       </div>
     </section>
 
-    <section class="section-wrap work-section" id="work">
-      <div class="section-heading compact"><p class="section-kicker">03 / SELECTED WORK</p><h2>أعمالي <span>.</span></h2><p class="section-subtitle">نماذج مختارة من شغلي — استبدل الأمثلة دي بفيديوهاتك وروابطك.</p></div>
-      <div class="work-grid">
-        <article class="work-card"><a class="work-preview preview-one" href="#" data-demo><span class="play-button">▶</span><span class="work-type">REELS / EDITING</span></a><div class="work-meta"><div><h3>مشروع مونتاج 01</h3><p>إيقاع سريع • مؤثرات • ألوان</p></div><span class="work-index">01</span></div></article>
-        <article class="work-card"><a class="work-preview preview-two" href="#" data-demo><span class="play-button">▶</span><span class="work-type">COLOR / STORY</span></a><div class="work-meta"><div><h3>مشروع مونتاج 02</h3><p>تصحيح ألوان • سرد بصري</p></div><span class="work-index">02</span></div></article>
-        <article class="work-card"><a class="work-preview preview-three" href="#" data-demo><span class="play-button">▶</span><span class="work-type">SOCIAL CONTENT</span></a><div class="work-meta"><div><h3>مشروع مونتاج 03</h3><p>محتوى سوشيال ميديا</p></div><span class="work-index">03</span></div></article>
+    <section class="contact-section" id="contact">
+      <div class="contact-heading">
+        <p class="eyebrow"><span></span> GET IN TOUCH</p>
+        <h2>LET'S WORK<br>TOGETHER<span>.</span></h2>
       </div>
-      <p class="demo-note">مهم: كروت الأعمال الحالية مجرد أماكن تجريبية وليست فيديوهات حقيقية. عدّل روابطها في ملف index.html.</p>
-    </section>
-
-    <section class="section-wrap social-section" id="contact">
-      <div class="section-heading compact"><p class="section-kicker">04 / LET'S CONNECT</p><h2>عندك فكرة؟ <span>ننفذها.</span></h2><p class="section-subtitle">اختار المنصة اللي تناسبك وابعتلي تفاصيل مشروعك.</p></div>
       <div class="social-list">
-        <a class="social-card" href="https://instagram.com/" target="_blank" rel="noreferrer"><span class="social-icon">◎</span><span class="social-label"><b>إنستجرام</b><small>INSTAGRAM</small></span><span class="social-arrow">↖</span></a>
-        <a class="social-card" href="https://facebook.com/" target="_blank" rel="noreferrer"><span class="social-icon">f</span><span class="social-label"><b>فيسبوك</b><small>FACEBOOK</small></span><span class="social-arrow">↖</span></a>
-        <a class="social-card" href="https://tiktok.com/" target="_blank" rel="noreferrer"><span class="social-icon">♪</span><span class="social-label"><b>تيك توك</b><small>TIKTOK</small></span><span class="social-arrow">↖</span></a>
-        <a class="social-card" href="https://youtube.com/" target="_blank" rel="noreferrer"><span class="social-icon">▶</span><span class="social-label"><b>يوتيوب</b><small>YOUTUBE</small></span><span class="social-arrow">↖</span></a>
+        <a class="social-card instagram" href="https://www.instagram.com/mohamed_yasser9e/" target="_blank" rel="noopener">
+          <span class="social-icon" aria-hidden="true">◎</span>
+          <span class="social-label"><strong>Instagram</strong><small>@mohamed_yasser9e</small></span>
+          <span class="social-arrow">↗</span>
+        </a>
+        <a class="social-card facebook" href="https://www.facebook.com/share/19vXVFrnKm/" target="_blank" rel="noopener">
+          <span class="social-icon facebook-letter" aria-hidden="true">f</span>
+          <span class="social-label"><strong>Facebook</strong><small>Follow my work</small></span>
+          <span class="social-arrow">↗</span>
+        </a>
+        <a class="social-card whatsapp" href="https://wa.me/201025593034" target="_blank" rel="noopener">
+          <span class="social-icon whatsapp-letter" aria-hidden="true">↗</span>
+          <span class="social-label"><strong>WhatsApp</strong><small>Let's talk about your project</small></span>
+          <span class="social-arrow">↗</span>
+        </a>
       </div>
-      <a class="button button-primary contact-button" href="mailto:your-email@example.com">راسلني بالإيميل <span>↗</span></a>
     </section>
   </main>
 
-  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">MY</span><span>MOHAMED <b>YASSER</b></span></a><p>مصنوع بشغف وتفاصيل كتير. © <span id="year"></span></p><a href="#home" class="back-top">فوق تاني ↑</a></footer>
-  <script src="script.js"></script>
+  <footer><a class="wordmark" href="#home">MY<span>.</span></a><span>© 2026 MOHAMED YASSER</span><a href="#home">BACK TO TOP ↑</a></footer>
 </body>
 </html>
